@@ -2,6 +2,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import datetime
+
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 # Using the "with" syntax
 with st.form(key='my_form'):
 
