@@ -123,6 +123,7 @@ def check_password():
         # Password correct.
         return True
 
+
 if check_password():
 
     # long_running_function()
