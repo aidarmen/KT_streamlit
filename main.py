@@ -28,7 +28,7 @@ def long_running_function():
 
     # return pd.DataFrame(wks.get_all_records())
 # df = pd.read_csv('map.csv')
-
+df = pd.read_csv('map.csv')
 
 hide_menu_style = """
         <style>
@@ -125,8 +125,8 @@ def check_password():
 
 if check_password():
 
-    long_running_function()
-
+    # long_running_function()
+    st.session_state.df = df
 
     st.date_input(
     q[0],
